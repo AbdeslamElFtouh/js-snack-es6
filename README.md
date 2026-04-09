@@ -19,11 +19,23 @@ Stampare a schermo la bici con peso minore.
 SNACK 2  =====================================================================================
 OBIETTIVO: creare un array di oggetti di squadre di calcio
     Ogni squadra avrà diverse proprietà: 
-    'nome', 
-    'punti fatti', 
-    'falli subiti'
+    'nome',        ---> da compilare
+    'punti fatti', ---> settata a 0
+    'falli subiti' ---> settata a 0
 
-Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
-Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
-Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+Generare numeri random al posto degli 0 nelle proprietà “punti fatti“ e “falli subiti”.
+
+Infine, creare un nuovo array i cui elementi contengono solo nomi e falli subiti 
+
+Stampare tutto in console.
+
+1. Creare array di oggetti con le proprietà elencate;
+2. creare una funzione che generi numeri random interi da 0 a 100;
+3. creare nuovo array in cui inserire solo le proprietà richieste dall'esercizio;
+4. creare ciclo for per iterare l'array 'squadre' iniziale;
+5. attribuire i valori generati dalla funzione alle proprietà i-esime settate a 0;
+6. creare nuovi oggetti contenenti solo le proprietà richieste;
+7. inserire tali oggetti nel nuovo array;
+8. stampare il nuovo array;
 
