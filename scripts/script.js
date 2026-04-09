@@ -1,12 +1,4 @@
-/* 
-2. creare una variabile in cui salviamo il valore della chiave 'prezzo' di uno degli oggetti 
-   dell'array ---> questa variabile fungerà da riferimento per il prezzo minimo da estrapolare;
-3. creare un ciclo for con cui scorrere i valori della chiave 'prezzo' dei nostri oggetti;
-4. inserire un istruzione condizionale nel ciclo con cui confrontare i vari valori iterati con 
-   il valore corrispondente alla bici con la variabile corrispondente al prezzo piu basso trovata fino ad ora;
-5. stampare tale variabile */
-
-
+// ARRAY di OGGETTI
 const biciclette = [
     {
         tipo: 'Bici da citta',
@@ -48,4 +40,19 @@ const biciclette = [
         tipo: 'Gravel',
         peso: 12
     }
-]
+];
+
+let min_weight = biciclette[0].peso; // variabile riferita al peso minimo
+
+// partiamo da i = 1 perchè min_weight corrisponde già al peso dalla bici numero 0
+for (let i = 1; i < biciclette.length; i++){ 
+    let current_weight = biciclette[i].peso;
+    
+    if(current_weight < min_weight){
+        min_weight = current_weight;
+    }
+}
+
+alert('La bicicletta più leggera pesa: ' + min_weight + ' kg'); 
+
+
